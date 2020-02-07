@@ -1,0 +1,15 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://Node2D.gd" type="Script" id=1]
+[ext_resource path="res://Particle.png" type="Texture" id=2]
+
+[node name="Particle" type="KinematicBody2D"]
+position = Vector2( 50, 450 )
+script = ExtResource( 1 )
+pathLength = 10
+pathColor = Color( 0.831373, 0.992157, 1, 1 )
+
+[node name="Sprite" type="Sprite" parent="."]
+scale = Vector2( 0.4, 0.4 )
+texture = ExtResource( 2 )
+
